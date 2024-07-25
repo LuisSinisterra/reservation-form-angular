@@ -1,0 +1,35 @@
+.form-container {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .form-label {
+    font-weight: bold; /* Etiquetas en negrita */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  textarea,
+  select {
+    border-radius: 0.25rem; /* Bordes redondeados */
+  }
+  
+  button {
+    font-size: 1.1rem; /* Tamaño de fuente del botón */
+  }
+  
+  .btn-success {
+    background-color: #28a745; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Color de fondo al pasar el mouse */
+  }
+  

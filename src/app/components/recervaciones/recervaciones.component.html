@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row justify-content-center my-5">
+    <div class="col-md-8 col-lg-6">
+      <div class="form-container bg-dark text-white p-4 rounded shadow-lg">
+        <h1 class="text-center mb-4">Recervaciones</h1>
+        <form [formGroup]="myForm" (ngSubmit)="send()">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Nombre" formControlName="nombre">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Email" formControlName="email">
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" id="telefono" class="form-control" placeholder="Teléfono" formControlName="telefono">
+          </div>
+
+          <div class="mb-3">
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="date" id="fecha" class="form-control" formControlName="fecha">
+          </div>
+
+          <div class="mb-3">
+            <label for="hora" class="form-label">Hora</label>
+            <input type="time" id="hora" class="form-control" formControlName="hora">
+          </div>
+
+          <div class="mb-3">
+            <label for="tipoHabitacion" class="form-label">Tipo de Habitación</label>
+            <select id="tipoHabitacion" class="form-select" formControlName="tipoHabitacion">
+              <option value="">Selecciona el tipo de habitación</option>
+              <option value="Suite">Suite</option>
+              <option value="VIP">VIP</option>
+              <option value="BackStage">BackStage</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="solicitud" class="form-label">Solicitud</label>
+            <textarea id="solicitud" class="form-control" placeholder="(Opcional)" rows="4" formControlName="solicitud"></textarea>
+          </div>
+
+          <button class="btn btn-success w-100" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
